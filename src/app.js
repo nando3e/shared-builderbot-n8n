@@ -57,9 +57,9 @@ const main = async () => {
     adapterProvider.server.post('/v1/messages', 
         handleCtx(async (bot, req, res) => {
             try {
-                const { number, message } = req.body
+                const { number, message, media } = req.body
                 await new Promise(resolve => setTimeout(resolve, 2000)); // Delay de 2 segundos
-                await bot.sendMessage(number, message, {})
+                await bot.sendMessage(number, message, { media })
                 return res.end('sent')
             } catch (error) {
                 console.error('Error sending message:', error);

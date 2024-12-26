@@ -1,7 +1,7 @@
 {
   "name": "base-bailey-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">\r   <a href=\"https://builderbot.vercel.app/\">\r     <picture>\r       <img src=\"https://builderbot.vercel.app/assets/thumbnail-vector.png\" height=\"80\">\r     </picture>\r     <h2 align=\"center\">BuilderBot</h2>\r   </a>\r </p>",
   "main": "src/app.js",
   "type": "module",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "keywords": [],
   "dependencies": {
-    "@builderbot/bot": "1.2.2",
-    "@builderbot/provider-baileys": "1.2.2",
+    "@builderbot/bot": "^1.2.2",
+    "@builderbot/provider-baileys": "^1.2.2",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
