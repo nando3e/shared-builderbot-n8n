@@ -43,7 +43,7 @@ const welcomeFlow = addKeyword(EVENTS.WELCOME)
 const main = async () => {
     const adapterFlow = createFlow([welcomeFlow])
     const adapterProvider = createProvider(BaileysProvider, {
-        writeMyself: 'both'
+        writeMyself: false
     })
     const adapterDB = new MemoryDB()
 
